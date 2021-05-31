@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>Course List</title>
+</head>
+
+<body>
+    <div class="course__wrapper">
+        <nav class="navbar navbar-expand-lg course__navbar">
+            <a class="navbar-brand" href="#">
+                <img width="53px" src="images/logo.svg" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Explore
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                    <li class="search__navbar">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search by Name / Category"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img width="15px"
+                                    src="images/search.svg" /></button>
+                        </form>
+                    </li>
+
+                    <li class="nav-item active nav__li--border">
+                        <a class="nav-link" href="#">Join as instractor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                            Sign Up
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="course__wrapper--main">
+            <div class="container">
+                <h3>Display 2,301 total result for "Tasweek</h3>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                            aria-controls="home" aria-selected="true">Course (4)</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                            aria-controls="profile" aria-selected="false">Diplomas (5)</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                            aria-controls="contact" aria-selected="false">Articles (6)</a>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="courses__cat">
+                            <p class="left__sec--title">Categories</p>
+
+                            <ul class="courses__cat--title">
+                                <li>Digital Marketing</li>
+                                <li>Human Resources</li>
+                                <li>Developement</li>
+                                <li>Management</li>
+                                <li>sales</li>
+                                <li>Marketing</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="course__rating">
+                            <p class="left__sec--title">Categories</p>
+                            <div class="course__rating--star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span>(2,200)</span>
+                            </div>
+                            <div class="course__rating--star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span>(2,400)</span>
+                            </div>
+                            <div class="course__rating--star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span>(1,200)</span>
+                            </div>
+                            <div class="course__rating--star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span>(900)</span>
+                            </div>
+                        </div>
+
+                        <div class="courses__cat--rating">
+                            <p class="left__sec--title">Level</p>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Beginner</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">intermediate</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">High Level</label>
+                            </div>
+                        </div>
+
+                        <div class="courses__cat--rating">
+                            <p class="left__sec--title">Time</p>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Less than 4 hours</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Less than 8 hours</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox3">Less than 11 hours</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h2 class="tab__title">All Courses (4)</h2>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="course__card">
+                                            <div class="course__card--img">
+                                                <div class="course__title">
+                                                    <span>Marketing</span>
+                                                    <span> <img src="" /> </span>
+                                                </div>
+                                                <img width="100%" src="images/courseImg.png" />
+                                            </div>
+                                            <div class="course__card--info">
+                                                <h4>Marekting & Youtube</h4>
+                                                <p class="course__name"> Moutasem Ahmed </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex laborum
+                                                    ut et fugiat. Quibusdam, dolorem ullam? Nesciunt</p>
+                                            </div>
+                                            <div class="course__rating">
+                                                <div class="course__rating--star">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                                <span>(1200)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="course__card">
+                                            <div class="course__card--img">
+                                                <div class="course__title">
+                                                    <span>Marketing</span>
+                                                    <span> <img src="" /> </span>
+                                                </div>
+                                                <img width="100%" src="images/courseImg.png" />
+                                            </div>
+                                            <div class="course__card--info">
+                                                <h4>Marekting & Youtube</h4>
+                                                <p class="course__name"> Moutasem Ahmed </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex laborum
+                                                    ut et fugiat. Quibusdam, dolorem ullam? Nesciunt</p>
+                                            </div>
+                                            <div class="course__rating">
+                                                <div class="course__rating--star">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                                <span>(1200)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="course__card">
+                                            <div class="course__card--img">
+                                                <div class="course__title">
+                                                    <span>Marketing</span>
+                                                    <span> <img src="" /> </span>
+                                                </div>
+                                                <img width="100%" src="images/courseImg.png" />
+                                            </div>
+                                            <div class="course__card--info">
+                                                <h4>Marekting & Youtube</h4>
+                                                <p class="course__name"> Moutasem Ahmed </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex laborum
+                                                    ut et fugiat. Quibusdam, dolorem ullam? Nesciunt</p>
+                                            </div>
+                                            <div class="course__rating">
+                                                <div class="course__rating--star">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                                <span>(1200)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="course__card">
+                                            <div class="course__card--img">
+                                                <div class="course__title">
+                                                    <span>Marketing</span>
+                                                    <span> <img src="" /> </span>
+                                                </div>
+                                                <img width="100%" src="images/courseImg.png" />
+                                            </div>
+                                            <div class="course__card--info">
+                                                <h4>Marekting & Youtube</h4>
+                                                <p class="course__name"> Moutasem Ahmed </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex laborum
+                                                    ut et fugiat. Quibusdam, dolorem ullam? Nesciunt</p>
+                                            </div>
+                                            <div class="course__rating">
+                                                <div class="course__rating--star">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                                <span>(1200)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <h2 class="tab__title">All Courses (6)</h2>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="course__card">
+                                            <div class="course__card--img">
+                                                <div class="course__title">
+                                                    <span>Marketing</span>
+                                                    <span> <img src="" /> </span>
+                                                </div>
+                                                <img width="100%" src="images/courseImg.png" />
+                                            </div>
+                                            <div class="course__card--info">
+                                                <h4>Marekting & Youtube</h4>
+                                                <p class="course__name"> Moutasem Ahmed </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex laborum
+                                                    ut et fugiat. Quibusdam, dolorem ullam? Nesciunt</p>
+                                            </div>
+                                            <div class="course__rating">
+                                                <div class="course__rating--star">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                                <span>(1200)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="course__card">
+                                            <div class="course__card--img">
+                                                <div class="course__title">
+                                                    <span>Marketing</span>
+                                                    <span> <img src="" /> </span>
+                                                </div>
+                                                <img width="100%" src="images/courseImg.png" />
+                                            </div>
+                                            <div class="course__card--info">
+                                                <h4>Marekting & Youtube</h4>
+                                                <p class="course__name"> Moutasem Ahmed </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex laborum
+                                                    ut et fugiat. Quibusdam, dolorem ullam? Nesciunt</p>
+                                            </div>
+                                            <div class="course__rating">
+                                                <div class="course__rating--star">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                                <span>(1200)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="course__card">
+                                            <div class="course__card--img">
+                                                <div class="course__title">
+                                                    <span>Marketing</span>
+                                                    <span> <img src="" /> </span>
+                                                </div>
+                                                <img width="100%" src="images/courseImg.png" />
+                                            </div>
+                                            <div class="course__card--info">
+                                                <h4>Marekting & Youtube</h4>
+                                                <p class="course__name"> Moutasem Ahmed </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex laborum
+                                                    ut et fugiat. Quibusdam, dolorem ullam? Nesciunt</p>
+                                            </div>
+                                            <div class="course__rating">
+                                                <div class="course__rating--star">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                                <span>(1200)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="course__card">
+                                            <div class="course__card--img">
+                                                <div class="course__title">
+                                                    <span>Marketing</span>
+                                                    <span> <img src="" /> </span>
+                                                </div>
+                                                <img width="100%" src="images/courseImg.png" />
+                                            </div>
+                                            <div class="course__card--info">
+                                                <h4>Marekting & Youtube</h4>
+                                                <p class="course__name"> Moutasem Ahmed </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex laborum
+                                                    ut et fugiat. Quibusdam, dolorem ullam? Nesciunt</p>
+                                            </div>
+                                            <div class="course__rating">
+                                                <div class="course__rating--star">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                                <span>(1200)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="course__card">
+                                            <div class="course__card--img">
+                                                <div class="course__title">
+                                                    <span>Marketing</span>
+                                                    <span> <img src="" /> </span>
+                                                </div>
+                                                <img width="100%" src="images/courseImg.png" />
+                                            </div>
+                                            <div class="course__card--info">
+                                                <h4>Marekting & Youtube</h4>
+                                                <p class="course__name"> Moutasem Ahmed </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex laborum
+                                                    ut et fugiat. Quibusdam, dolorem ullam? Nesciunt</p>
+                                            </div>
+                                            <div class="course__rating">
+                                                <div class="course__rating--star">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                                <span>(1200)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="course__card">
+                                            <div class="course__card--img">
+                                                <div class="course__title">
+                                                    <span>Marketing</span>
+                                                    <span> <img src="" /> </span>
+                                                </div>
+                                                <img width="100%" src="images/courseImg.png" />
+                                            </div>
+                                            <div class="course__card--info">
+                                                <h4>Marekting & Youtube</h4>
+                                                <p class="course__name"> Moutasem Ahmed </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex laborum
+                                                    ut et fugiat. Quibusdam, dolorem ullam? Nesciunt</p>
+                                            </div>
+                                            <div class="course__rating">
+                                                <div class="course__rating--star">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                                <span>(1200)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer__left">
+                            <h3>About the Academy</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ea doloribus cupiditate,
+                                culpa aliquam vitae perspiciatis recusandae sed accusantium temporibus magnam n </p>
+                            <p>Join us on</p>
+                            <div class="social__media">
+                                <a><span class="fa fa-facebook"></span></a>
+                                <a><span class="fa fa-twitter"></span></a>
+                                <a><span class="fa fa-instagram"></span></a>
+                                <a><span class="fa fa-linkedin"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer__middle">
+                            <a>Terms & condition</a>
+                            <a>Contact Us</a>
+                            <a>Join as instructor</a>
+                            <a>Call us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer__right">
+                            <h3>Pay With</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

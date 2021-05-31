@@ -1,0 +1,117 @@
+.accordion {
+	.card {
+		.card-header {
+			button {
+				box-shadow: none !important;
+
+				&:hover {
+					text-decoration: none !important;
+				}
+				.collapse__text {
+					display: flex;
+					justify-content: space-between;
+
+					p {
+						color: #000;
+						font-weight: bold;
+					}
+
+					span {
+						color: #909994;
+					}
+				}
+			}
+		}
+
+		.card-body {
+			padding: 0;
+			ul {
+				padding: 0;
+				margin: 0;
+				padding: 1.25rem;
+				background: #cef7e3;
+
+				.course__session {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin-bottom: 8px;
+
+					> div {
+						display: flex;
+
+						span {
+							color: #c6dbb1;
+						}
+
+						p {
+							margin-bottom: 0;
+							line-height: 1;
+							margin-left: 8px;
+							color: #808a85;
+						}
+					}
+
+					> p {
+						margin: 0;
+						color: #afbcb6;
+					}
+				}
+			}
+		}
+	}
+}
+
+.tabs__container {
+	background: rgba(0, 0, 0, 0.03);
+
+	.nav.nav-tabs {
+		.nav-item {
+			.nav-link {
+				color: #4e524a;
+				font-weight: bold;
+				font-size: 16px;
+				&.active {
+					color: #000;
+					background-color: transparent;
+					border-color: transparent;
+					border-bottom-color: #000;
+					border-bottom-width: 2px;
+				}
+			}
+		}
+	}
+}
+
+.tabs__container--content {
+	margin-bottom: 65px;
+
+	.tab-content {
+		.tab-pane {
+			padding: 15px 0;
+			h3 {
+				color: #000;
+				font-weight: bold;
+				margin-top: 10px;
+			}
+
+			P {
+				color: #000;
+				font-size: 12px;
+				margin-bottom: 0;
+				span {
+					margin-bottom: 10px;
+					display: inline-block;
+					margin-right: 10px;
+					color: #000;
+					> span {
+						&:first-child {
+							color: #6d7069;
+							margin-right: 3px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

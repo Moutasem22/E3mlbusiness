@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>Course List</title>
+</head>
+
+<body>
+    <div class="course__wrapper">
+        <nav class="navbar navbar-expand-lg course__navbar">
+            <a class="navbar-brand" href="#">
+                <img width="53px" src="images/logo.svg" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Explore
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                    <li class="search__navbar">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search by Name / Category"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img width="15px"
+                                    src="images/search.svg" /></button>
+                        </form>
+                    </li>
+
+                    <li class="nav-item active nav__li--border">
+                        <a class="nav-link" href="#">Join as instractor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                            Sign Up
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="course__wrapper--main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <img width="100%" src="images/courseImg.png" />
+                    </div>
+                    <div class="col-md-5">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <div class="collapse__text">
+                                                <p> First Session</p>
+                                                <span>5 Videos 150 Mins</span>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="course__session">
+                                                <div>
+                                                    <span class="fa fa-play-circle-o"></span>
+                                                    <p>1 Marketing & Advertizing</p>
+                                                </div>
+                                                <p>30 Min</p>
+                                            </li>
+                                            <li class="course__session">
+                                                <div>
+                                                    <span class="fa fa-play-circle-o"></span>
+                                                    <p>1 Marketing & Advertizing</p>
+                                                </div>
+                                                <p>30 Min</p>
+                                            </li>
+                                            <li class="course__session">
+                                                <div>
+                                                    <span class="fa fa-play-circle-o"></span>
+                                                    <p>1 Marketing & Advertizing</p>
+                                                </div>
+                                                <p>30 Min</p>
+                                            </li>
+                                            <li class="course__session">
+                                                <div>
+                                                    <span class="fa fa-play-circle-o"></span>
+                                                    <p>1 Marketing & Advertizing</p>
+                                                </div>
+                                                <p>30 Min</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            <div class="collapse__text">
+                                                <p> Second Session</p>
+                                                <span>3 Videos 90 Mins</span>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="course__session">
+                                                <div>
+                                                    <span class="fa fa-play-circle-o"></span>
+                                                    <p>1 Marketing & Advertizing</p>
+                                                </div>
+                                                <p>30 Min</p>
+                                            </li>
+                                            <li class="course__session">
+                                                <div>
+                                                    <span class="fa fa-play-circle-o"></span>
+                                                    <p>1 Marketing & Advertizing</p>
+                                                </div>
+                                                <p>30 Min</p>
+                                            </li>
+                                            <li class="course__session">
+                                                <div>
+                                                    <span class="fa fa-play-circle-o"></span>
+                                                    <p>1 Marketing & Advertizing</p>
+                                                </div>
+                                                <p>30 Min</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            <div class="collapse__text">
+                                                <p> Third Session</p>
+                                                <span>6 Videos 180 Mins</span>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="course__session">
+                                                <div>
+                                                    <span class="fa fa-play-circle-o"></span>
+                                                    <p>1 Marketing & Advertizing</p>
+                                                </div>
+                                                <p>30 Min</p>
+                                            </li>
+                                            <li class="course__session">
+                                                <div>
+                                                    <span class="fa fa-play-circle-o"></span>
+                                                    <p>1 Marketing & Advertizing</p>
+                                                </div>
+                                                <p>30 Min</p>
+                                            </li>
+                                            <li class="course__session">
+                                                <div>
+                                                    <span class="fa fa-play-circle-o"></span>
+                                                    <p>1 Marketing & Advertizing</p>
+                                                </div>
+                                                <p>30 Min</p>
+                                            </li>
+                                            <li class="course__session">
+                                                <div>
+                                                    <span class="fa fa-play-circle-o"></span>
+                                                    <p>1 Marketing & Advertizing</p>
+                                                </div>
+                                                <p>30 Min</p>
+                                            </li>
+                                            <li class="course__session">
+                                                <div>
+                                                    <span class="fa fa-play-circle-o"></span>
+                                                    <p>1 Marketing & Advertizing</p>
+                                                </div>
+                                                <p>30 Min</p>
+                                            </li>
+                                            <li class="course__session">
+                                                <div>
+                                                    <span class="fa fa-play-circle-o"></span>
+                                                    <p>1 Marketing & Advertizing</p>
+                                                </div>
+                                                <p>30 Min</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs__container">
+                <div class="container">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">About Course</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">Questions</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                aria-controls="contact" aria-selected="false">Attached File</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tabs__container--content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <h3>Course description</h3>
+                                    <p>
+                                        <span> <span>Publish Date:</span> 31/05/2021</span>
+                                        <span><span> Last Update:</span>31/05/2021</span>
+                                    </p>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus hic quas
+                                        animi
+                                        aliquid officiis nesciunt corrupti illo! Quo expedita totam, </p>
+
+                                    <h3 style="margin-top: 20px;">Course Details</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    <p> totam vero expedita </p>
+                                    <p>Lorem ipsum dolor sit amet. </p>
+                                    <p>atque corrupti tempora iste autem itaque. </p>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer__left">
+                            <h3>About the Academy</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ea doloribus
+                                cupiditate,
+                                culpa aliquam vitae perspiciatis recusandae sed accusantium temporibus magnam n </p>
+                            <p>Join us on</p>
+                            <div class="social__media">
+                                <a><span class="fa fa-facebook"></span></a>
+                                <a><span class="fa fa-twitter"></span></a>
+                                <a><span class="fa fa-instagram"></span></a>
+                                <a><span class="fa fa-linkedin"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer__middle">
+                            <a>Terms & condition</a>
+                            <a>Contact Us</a>
+                            <a>Join as instructor</a>
+                            <a>Call us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer__right">
+                            <h3>Pay With</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
